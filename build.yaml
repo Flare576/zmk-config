@@ -1,11 +1,41 @@
 ---
 include:
+  # ── Hardware verification ──────────────────────────────────────────
+  # Flash these first on any new build to verify all keys/encoders work.
+  # Each key outputs a unique positional character (rows labeled ` ! @ # $).
   - board: nice_nano//zmk
     shield: sofle_left nice_view_adapter nice_view
+    cmake-args: -DKEYMAP_FILE=../../config/sofle_test.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"sofle-test\"
+    artifact-name: sofle_test_left
+  - board: nice_nano//zmk
+    shield: sofle_right nice_view_adapter nice_view
+    cmake-args: -DKEYMAP_FILE=../../config/sofle_test.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"sofle-test\"
+    artifact-name: sofle_test_right
+
+  # ── Josef's original layout ────────────────────────────────────────
+  # ZMK port of josefadamcik's default QMK keymap (QWERTY + Colemak + Lower/Raise/Adjust)
+  - board: nice_nano//zmk
+    shield: sofle_left nice_view_adapter nice_view
+    cmake-args: -DKEYMAP_FILE=../../config/sofle.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"sofle\"
     artifact-name: sofle_left
   - board: nice_nano//zmk
     shield: sofle_right nice_view_adapter nice_view
+    cmake-args: -DKEYMAP_FILE=../../config/sofle.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"sofle\"
     artifact-name: sofle_right
+
+  # ── SoFlare (flare576's layout) ────────────────────────────────────
+  # BASE / MOUS / SYMS / FF14 / ESDF layers
+  - board: nice_nano//zmk
+    shield: sofle_left nice_view_adapter nice_view
+    cmake-args: -DKEYMAP_FILE=../../config/soflare.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"soflare\"
+    artifact-name: soflare_left
+  - board: nice_nano//zmk
+    shield: sofle_right nice_view_adapter nice_view
+    cmake-args: -DKEYMAP_FILE=../../config/soflare.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"soflare\"
+    artifact-name: soflare_right
+
+  # ── Utility ────────────────────────────────────────────────────────
+  # Flash to peripheral (right half) to clear BT bonds if pairing goes wrong
   - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset
