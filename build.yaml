@@ -1,11 +1,11 @@
 ---
 include:
-  - board: nice_nano_v2/ble
+  - board: nice_nano//zmk
     shield: sofle_left nice_view_adapter nice_view
     artifact-name: sofle_left
-  - board: nice_nano_v2/ble
+  - board: nice_nano//zmk
     shield: sofle_right nice_view_adapter nice_view
     artifact-name: sofle_right
-  - board: nice_nano_v2/ble
+  - board: nice_nano//zmk
     shield: settings_reset
     artifact-name: settings_reset
