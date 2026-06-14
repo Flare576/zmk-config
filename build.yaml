@@ -1,0 +1,11 @@
+---
+include:
+  - board: nice_nano_v2
+    shield: sofle_left nice_view_adapter nice_view
+    artifact-name: sofle_left
+  - board: nice_nano_v2
+    shield: sofle_right nice_view_adapter nice_view
+    artifact-name: sofle_right
+  - board: nice_nano_v2
+    shield: settings_reset
+    artifact-name: settings_reset
