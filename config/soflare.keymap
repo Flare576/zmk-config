@@ -75,7 +75,7 @@
                          &tog ESDF  &kp LGUI   &lt SYMS ESC &kp LALT &kp SPACE   &lt MOUS RET &kp BSPC   &kp RS(RALT) &kp DEL    &tog FF14
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯╰────────────┴──────────┴────────────┴──────────┴──────────╯
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         mous_layer {
@@ -93,7 +93,7 @@
                          &none          &trans         &trans          &trans     &trans      &trans   &mkp MCLK    &mkp MB4       &mkp MB5       &bt BT_CLR
 //                       ╰──────────────┴──────────────┴───────────────┴──────────┴──────────╯╰────────┴────────────┴──────────────┴──────────────┴──────────╯
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         syms_layer {
@@ -111,7 +111,7 @@
                          &none      &trans     &trans     &trans     &trans      &trans   &trans     &trans     &trans       &none
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯╰────────┴──────────┴──────────┴────────────┴──────────╯
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         ff14_layer {
@@ -129,7 +129,7 @@
                          &tog ESDF  &none      &trans     &trans     &trans      &trans   &trans     &kp PSCRN  &trans     &tog FF14
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯╰────────┴──────────┴──────────┴──────────┴──────────╯
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
 
         esdf_layer {
@@ -147,7 +147,7 @@
                          &tog ESDF  &none      &trans     &trans     &trans      &trans   &trans     &kp PSCRN  &trans     &tog FF14
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯╰────────┴──────────┴──────────┴──────────┴──────────╯
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
