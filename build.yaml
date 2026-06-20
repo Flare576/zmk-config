@@ -27,11 +27,11 @@ include:
   # BASE / MOUS / SYMS / FF14 / ESDF layers
   - board: nice_nano//zmk
     shield: sofle_left nice_view_adapter nice_view
-    cmake-args: -DKEYMAP_FILE=../../config/soflare.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"SoFlare\"
+    cmake-args: -DKEYMAP_FILE=../../config/soflare.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"SoFlare1\"
     artifact-name: soflare_left
   - board: nice_nano//zmk
     shield: sofle_right nice_view_adapter nice_view
-    cmake-args: -DKEYMAP_FILE=../../config/soflare.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"SoFlare\"
+    cmake-args: -DKEYMAP_FILE=../../config/soflare.keymap -DCONFIG_ZMK_KEYBOARD_NAME=\"SoFlare1\"
     artifact-name: soflare_right
 
   # ── Utility ────────────────────────────────────────────────────────
