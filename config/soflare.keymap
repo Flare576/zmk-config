@@ -76,6 +76,7 @@
     keymap {
         compatible = "zmk,keymap";
 
+        // Note: Apple's keyboard settings don't discern right- and left-ALT, so swapping keys there breaks TAB & META
         osx_layer {
             label = "OSX";
             bindings = <
@@ -86,7 +87,7 @@
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┤                        ├──────────┼────────────┼──────────┼──────────┼──────────┼──────────┤
     &kp LSHFT  &kp A     &kp S      &kp D      &kp F      &kp G                               &kp H      &kp J        &kp K      &kp L      &kp SEMI   &kp SQT
 // ├──────────┼──────────┼──────────┼──────────┼──────────┼──────────┼──────────╮╭────────────┼──────────┼────────────┼──────────┼──────────┼──────────┼──────────┤
-    &kp LCTRL  &kp Z     &kp X      &kp C      &kp V      &kp B      &td_play    &td_home     &kp N      &kp M        &kp COMMA  &kp DOT    &kp FSLH   &mt RSHFT PLUS
+    &kp LCTRL  &kp Z     &kp X      &kp C      &kp V      &kp B      &td_play    &td_home     &kp N      &kp M        &kp COMMA  &kp DOT    &kp FSLH   &mt RSHFT EQUAL
 // ╰──────────┴──────────┼──────────┼──────────┼──────────┼──────────┼──────────╯╰────────────┼──────────┼────────────┼──────────┼──────────┴──────────┴──────────╯
                          &tog ESDF  &kp LALT   &lt SYMS ESC &kp LGUI &kp SPACE   &lt MOUS RET &kp BSPC   &kp RS(RALT) &kp DEL    &tog FF14
 //                       ╰──────────┴──────────┴──────────┴──────────┴──────────╯╰────────────┴──────────┴────────────┴──────────┴──────────╯
