@@ -19,6 +19,7 @@
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
 };
 
+// Mouse Movement settings
 &mmv {
     x-input-code = <INPUT_REL_X>;
     y-input-code = <INPUT_REL_Y>;
@@ -26,6 +27,7 @@
     acceleration-exponent = <1>; // default: 1
 };
 
+// Mouse Scroll settings
 &msc {
     x-input-code = <INPUT_REL_HWHEEL>;
     y-input-code = <INPUT_REL_WHEEL>;
