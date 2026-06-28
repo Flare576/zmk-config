@@ -19,6 +19,14 @@ Builds run via GitHub Actions on push. Firmware artifacts appear in the workflow
 
 ---
 
+## `sofle_test.keymap` - Testing Firmware
+
+Simply maps a distinct keystroke to every key/encoder action for soldering validation.
+
+## `soflare.keymap` - Personal Mapping
+
+See the full explanation at my [Sofle](https://github.com/Flare576/sofle) top-level repo.
+
 ## `sofle.keymap` — Design Reference
 
 This is a full ZMK port of [josefadamcik's QMK default keymap](https://github.com/qmk/qmk_firmware/tree/master/keyboards/sofle/keymaps/default), redesigned to solve problems the direct translation couldn't.
